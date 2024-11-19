@@ -2,10 +2,7 @@ import java.util.Scanner;
 
 public class Main
 {
-  public static void main(String[] args)
-  {
-    // Make sure to test your methods here
-  }
+
 
   public static void printNTimes(String word, int N)
   {
@@ -46,11 +43,30 @@ public class Main
 
   public static void starTree()
   {
-    for(int )
+    for(int rizzEdge = 0; rizzEdge < 9; rizzEdge++)
+    {
+      for(int spacing = 0; spacing < rizzEdge; spacing++)
+      {
+        System.out.print(" ");
+      }
+
+      for(int starRizz = rizzEdge; starRizz < 9; starRizz++)
+      {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
   }
 
   public static void multTable()
   {
-    // code solution here
+    for(int skibidi = 1; skibidi <= 10; skibidi++)
+    {
+      for(int rizzler = 1; rizzler <= 10; rizzler++)
+      {
+        System.out.print(skibidi * rizzler + " ");
+      }
+      System.out.println();
+    }
   }
 }
